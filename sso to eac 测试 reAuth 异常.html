@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Monaco; color: #4e7bb1; -webkit-text-stroke: #4e7bb1}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Monaco; -webkit-text-stroke: #000000; min-height: 16.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Monaco; -webkit-text-stroke: #000000}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Monaco; -webkit-text-stroke: #000000; background-color: #ffffff}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Monaco; -webkit-text-stroke: #000000; background-color: #ffffff; min-height: 16.0px}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Monaco; color: #900112; -webkit-text-stroke: #900112}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Monaco; color: #900112; -webkit-text-stroke: #900112; background-color: #ffffff}
+    span.s1 {font-kerning: none; color: #000000; background-color: #ffffff; -webkit-text-stroke: 0px #000000}
+    span.s2 {font-kerning: none; background-color: #ffffff}
+    span.s3 {font-kerning: none}
+    span.s4 {font-kerning: none; color: #093c94; background-color: #ffffff; -webkit-text-stroke: 0px #093c94}
+    span.s5 {font-kerning: none; color: #093c94; -webkit-text-stroke: 0px #093c94}
+    span.s6 {font-kerning: none; color: #900112; background-color: #ffffff; -webkit-text-stroke: 0px #900112}
+    span.s7 {font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">reAuth link: https:</span><span class="s2">//sso-staging.aia.com.hk/am/json/alpha/authenticate?authIndexType=service&amp;authIndexValue=AgencyLoginMobile&amp;flow=reAuth</span></p>
+<p class="p2"><span class="s3"></span><br></p>
+<p class="p3"><span class="s3">headers:</span></p>
+<p class="p3"><span class="s2">[manager.requestSerializer setValue:@</span><span class="s4">"application/json"</span><span class="s2"> forHTTPHeaderField:@</span><span class="s4">""</span><span class="s2">];</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>[manager.requestSerializer setValue:@</span><span class="s4">"resource=2.1"</span><span class="s2"> forHTTPHeaderField:@</span><span class="s4">"Accept-API-Version"</span><span class="s2">];</span></p>
+<p class="p4"><span class="s3"><span class="Apple-converted-space">    </span>[manager.requestSerializer setValue:FRUser.currentUser.token.idToken forHTTPHeaderField:@</span><span class="s5">"oidc_id_token"</span><span class="s3">];</span></p>
+<p class="p5"><span class="s3"></span><br></p>
+<p class="p3"><span class="s2">正常 response 时返回了 authId + </span><span class="s3">SSO_JWT</span><span class="s2">：<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s2">authId:<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s2">eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ3aGl0ZWxpc3Qtc3RhdGUiOiJjYmM2MGE5My0yODMxLTQ3MTYtODE5ZS04N2I4MjdmYjc5MjciLCJhdXRoSW5kZXhWYWx1ZSI6IkFnZW5jeUxvZ2luTW9iaWxlIiwib3RrIjoiNnNvdXJldHByaHRnMjlvY3FiamFvcXFnYmIiLCJhdXRoSW5kZXhUeXBlIjoic2VydmljZSIsInJlYWxtIjoiL2FscGhhIiwic2Vzc2lvbklkIjoiKkFBSlRTUUFDTURJQUJIUjVjR1VBQ0VwWFZGOUJWVlJJQUFKVE1RQUNNREUuKmV5SjBlWEFpT2lKS1YxUWlMQ0pqZEhraU9pSktWMVFpTENKaGJHY2lPaUpJVXpJMU5pSjkuWlhsS01HVllRV2xQYVVwTFZqRlJhVXhEU214aWJVMXBUMmxLUWsxVVNUUlJNRXBFVEZWb1ZFMXFWVEpKYVhkcFdWZDRia2xxYjJsYVIyeDVTVzR3TGk1T2NVSm1Nemt6WWtoTVdVSTBhRzh6VHpsdlpYVjNMbE5ZYlZoUlVXOVlZa016TVdGaE5VTnRhbXh3YkMxSVJrZElXbXBxUkZoVk5sSnFSRWwwU0cxUFJYcGhOMnREVVRCM2FEZGlaM1pKZDNGRU1XWkZaRVpVYTNvd01ucFpVbkZ4YVRadWVucHpaMmRoZW1aWVJuSmhUbmxsYm1WSVEwUnlUMlJ5WjJSWFpIZGxlbXRvTUhvd2MxWmhhR0p1Tm1wNFMxbGlValJDWTNZeWFuWXRjMFZFWjBkTVlXRTNWM2d4TTFaa2RrZGlkVEZpYTNZMWIyOVlSR3RMWDBrd1MwNTRUSGhPU2paTFNtMXlhRWx1Wkd0SFVqSkpMV1ZGZW00elkweFRZV2htUTI4eE5tcE9UbE14ZVZBMlJ6Qk9kVm8zWjNOM2FsVXhZV2xZYXpONVdWOXFSMDFyV0ZKNmFIVktRV0pMUlROUmFGbENZUz</span></p>
+<p class="p2"><span class="s3"></span><br></p>
+<p class="p2"><span class="s3"></span><br></p>
+<p class="p3"><span class="s3">遇到的异常返回【测试了2次】：</span></p>
+<p class="p2"><span class="s3"></span><br></p>
+<p class="p3"><span class="s2">{</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>realm = </span><span class="s6">"/alpha"</span><span class="s2">;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">    </span>successUrl = </span><span class="s2">"/enduser/?realm=/alpha"</span><span class="s1">;</span></p>
+<p class="p7"><span class="s7"><span class="Apple-converted-space">    </span>tokenId = </span><span class="s3">"eyJ0eXAiOiJKV1QiLCJraWQiOiJOYm9KMmxIQnMxOTdqS3QxWkZ3MVRESVJGdGs9IiwiYWxnIjoiUlMyNTYifQ.eyJhdF9oYXNoIjoiOERialJ2aWNaVGhSVUFTeE9nYVZNUSIsInN1YiI6ImM1NDI2NTZhLTQ1ZDUtNDQ3Ni05NjhlLTdjNTA0NTkyY2Q2ZSIsImF1ZGl0VHJhY2tpbmdJZCI6ImM0MDJhYWE5LTdhZWUtNDVhZi1iMzVmLTM2OGY0MmIyYTA2ZS03MzIwNjYiLCJpc3MiOiJodHRwczovL3Nzby1zdGFnaW5nLmFpYS5jb20uaGs6NDQzL2FtL29hdXRoMiIsInRva2VuTmFtZSI6ImlkX3Rva2VuIiwicGFzc3dvcmRWZXJzaW9uIjoxLjAsImV4cGlyYXRpb25UaW1lX3N5c3RlbSI6MC4wLCJzaWQiOiJ5Q0Y3MDZnYTNqRVJZcGpiVGx4d0hzb0JKaXRnRWVjTHFMTG5GTFYrSllrPSIsImFjciI6IjAiLCJhenAiOiJoa2llbmdhZ2UiLCJhdXRoX3RpbWUiOjE3NDU0NzQ5NDQsImV4cCI6MTc0NTQ3ODU0NSwiaWF0IjoxNzQ1NDc0OTQ1LCJlbWFpbCI6IkFJQUhLUnB0R3JwSVQtaUVuZ2FnZVN1cHBvcnRAYWlhLmNvbSIsInN1Ym5hbWUiOiJjNTQyNjU2YS00NWQ1LTQ0NzYtOTY4ZS03YzUwNDU5MmNkNmUiLCJtb2JpbGUiOiIrODUyOTcwNzQ4MTYiLCJhdWQiOiJoa2llbmdhZ2UiLCJjX2hhc2giOiJmdXBZd00wRlVGWEdrVFZHTk5tMG9nIiwib3JnLmZvcmdlcm9jay5vcGVuaWRjb25uZWN0Lm9wcyI6IkphVUEtOVl5dmI0azJiWnZ3UG5ucUtaVktNTSIsInNfaGFzaCI6InVTMUdnN1R1blZDMG42ZUowUndYLXciLCJyZWFsbSI6Ii9hbHBoYSIsImxvY2F0aW9uIjoiSEtHIiwidXNlclR5cGUiOiJBR1QiLCJ0b2tlblR5cGUiOiJKV1RUb2tlbiIsInVzZXJuYW1lIjoiMDQzODQifQ.HvM_pnWGW8f05RscfK7jOEo37hnszrJs-e9IN1X6qfHNepjxI7GXWR6GCYQjtg9W537haud8aT_17gCimxOPimNB_gelW6IdMaKnL6x5aR8kRJ0rsvUbXjHbEQ3QtS2T3muArhK-wOlCUSwZICS77Q2c3RVlGcCKiFp1fCnolRSU2bx8-Et0KuTRTtS8tYr7EtIcPZyzoUPmcho-uX-zqgu0zW4vh6wuWzwtx6-VmjlBT-Ag05s1zIPZAYJRn3lOQ8iToxipyAhLNWVgc1ID6cz2DXakX8i2bjSieJog2FB3ZA92uFjRpo6198ciuFOKqQEKHPZSJvo6xAi2OSU6dg"</span><span class="s7">;</span></p>
+<p class="p3"><span class="s2">}</span></p>
+<p class="p2"><span class="s3"></span><br></p>
+<p class="p3"><span class="s2">{</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>realm = </span><span class="s6">"/alpha"</span><span class="s2">;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">    </span>successUrl = </span><span class="s2">"/enduser/?realm=/alpha"</span><span class="s1">;</span></p>
+<p class="p7"><span class="s7"><span class="Apple-converted-space">    </span>tokenId = </span><span class="s3">"eyJ0eXAiOiJKV1QiLCJraWQiOiJOYm9KMmxIQnMxOTdqS3QxWkZ3MVRESVJGdGs9IiwiYWxnIjoiUlMyNTYifQ.eyJhdF9oYXNoIjoiOERialJ2aWNaVGhSVUFTeE9nYVZNUSIsInN1YiI6ImM1NDI2NTZhLTQ1ZDUtNDQ3Ni05NjhlLTdjNTA0NTkyY2Q2ZSIsImF1ZGl0VHJhY2tpbmdJZCI6ImM0MDJhYWE5LTdhZWUtNDVhZi1iMzVmLTM2OGY0MmIyYTA2ZS03MzIwNjYiLCJpc3MiOiJodHRwczovL3Nzby1zdGFnaW5nLmFpYS5jb20uaGs6NDQzL2FtL29hdXRoMiIsInRva2VuTmFtZSI6ImlkX3Rva2VuIiwicGFzc3dvcmRWZXJzaW9uIjoxLjAsImV4cGlyYXRpb25UaW1lX3N5c3RlbSI6MC4wLCJzaWQiOiJ5Q0Y3MDZnYTNqRVJZcGpiVGx4d0hzb0JKaXRnRWVjTHFMTG5GTFYrSllrPSIsImFjciI6IjAiLCJhenAiOiJoa2llbmdhZ2UiLCJhdXRoX3RpbWUiOjE3NDU0NzQ5NDQsImV4cCI6MTc0NTQ3ODU0NSwiaWF0IjoxNzQ1NDc0OTQ1LCJlbWFpbCI6IkFJQUhLUnB0R3JwSVQtaUVuZ2FnZVN1cHBvcnRAYWlhLmNvbSIsInN1Ym5hbWUiOiJjNTQyNjU2YS00NWQ1LTQ0NzYtOTY4ZS03YzUwNDU5MmNkNmUiLCJtb2JpbGUiOiIrODUyOTcwNzQ4MTYiLCJhdWQiOiJoa2llbmdhZ2UiLCJjX2hhc2giOiJmdXBZd00wRlVGWEdrVFZHTk5tMG9nIiwib3JnLmZvcmdlcm9jay5vcGVuaWRjb25uZWN0Lm9wcyI6IkphVUEtOVl5dmI0azJiWnZ3UG5ucUtaVktNTSIsInNfaGFzaCI6InVTMUdnN1R1blZDMG42ZUowUndYLXciLCJyZWFsbSI6Ii9hbHBoYSIsImxvY2F0aW9uIjoiSEtHIiwidXNlclR5cGUiOiJBR1QiLCJ0b2tlblR5cGUiOiJKV1RUb2tlbiIsInVzZXJuYW1lIjoiMDQzODQifQ.HvM_pnWGW8f05RscfK7jOEo37hnszrJs-e9IN1X6qfHNepjxI7GXWR6GCYQjtg9W537haud8aT_17gCimxOPimNB_gelW6IdMaKnL6x5aR8kRJ0rsvUbXjHbEQ3QtS2T3muArhK-wOlCUSwZICS77Q2c3RVlGcCKiFp1fCnolRSU2bx8-Et0KuTRTtS8tYr7EtIcPZyzoUPmcho-uX-zqgu0zW4vh6wuWzwtx6-VmjlBT-Ag05s1zIPZAYJRn3lOQ8iToxipyAhLNWVgc1ID6cz2DXakX8i2bjSieJog2FB3ZA92uFjRpo6198ciuFOKqQEKHPZSJvo6xAi2OSU6dg"</span><span class="s7">;</span></p>
+<p class="p3"><span class="s2">}</span></p>
+<p class="p2"><span class="s3"></span><br></p>
+<p class="p2"><span class="s3"></span><br></p>
+</body>
+</html>
